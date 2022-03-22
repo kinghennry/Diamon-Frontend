@@ -1,0 +1,11 @@
+export { default as SEO } from "./seo/SEO";
+export { default as NewFeedback } from "./newFeedback/NewFeedback";
+export { default as Loading } from "./common/Loading";
+export { default as Footer } from "./common/Footer";
+export { default as ProtectedRoute } from "./common/ProtectedRoute";
+export { default as device } from "./common/MediaQueries";
+export { default as MainLayout } from "./common/Layout";
+export { default as SideBar } from "./feedbackList/sideBar/index";
+export { default as Main } from "./feedbackList/main/index";
+export { default as Header } from "./feedbackDetail/Header";
+export { default as SingleFeedback } from "./feedbackDetail/SingleFeedback";
