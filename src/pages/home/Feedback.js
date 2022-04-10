@@ -14,7 +14,7 @@ function Feedback() {
 
   return (
     <>
-      {user ? (
+      {user?.result?._id ? (
         <SEO title={`Home || ${user?.result?.username.toLocaleUpperCase()} `} />
       ) : (
         <SEO title="Diamon" />

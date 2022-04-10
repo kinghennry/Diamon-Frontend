@@ -7,6 +7,7 @@ import { useDispatch, useSelector } from "react-redux";
 import moment from "moment";
 import { likeFeedback } from "../../../features/feedbackSlice";
 import { excerpt } from "../../../utils";
+import { ThreeDots } from "react-loader-spinner";
 import {
   Button,
   Arrow,
@@ -37,6 +38,9 @@ function Feedback({
   const dispatch = useDispatch();
   const { user } = useSelector((state) => ({
     ...state.auth,
+  }));
+  const { loading } = useSelector((state) => ({
+    ...state.feedback,
   }));
 
   const handleLike = () => {

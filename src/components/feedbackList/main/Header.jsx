@@ -7,6 +7,7 @@ import Search from "./Search";
 import { ButtonOne } from "../../common/ui/Button";
 import device from "../../common/MediaQueries";
 import { useHistory } from "react-router-dom";
+import millify from "millify";
 
 const Container = styled.div`
   background: #373f68;
@@ -47,7 +48,8 @@ function Header({ totalFeedbacks }) {
       <SuggestionCount>
         <Icon />
         <h3>
-          {totalFeedbacks} &nbsp;Suggestion
+          {/* {millify(totalFeedbacks)} */}
+          {totalFeedbacks}&nbsp;Suggestion
           {totalFeedbacks > 1 && "s"}
         </h3>
         <Search />

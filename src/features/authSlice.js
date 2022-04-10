@@ -10,9 +10,9 @@ export const register = createAsyncThunk(
       toast.success("Register Successfully");
       history.push("/");
       return res.data;
-    } catch (err) {
-      console.log(err);
-      return rejectWithValue(err.response.data);
+    } catch (error) {
+      console.log(error);
+      return rejectWithValue(error.response.data);
     }
   }
 );
@@ -26,9 +26,9 @@ export const login = createAsyncThunk(
       toast.success("Login Successfully");
       history.push("/");
       return res.data;
-    } catch (err) {
-      console.log(err);
-      return rejectWithValue(err.response.data);
+    } catch (error) {
+      console.log(error);
+      return rejectWithValue(error.response.data);
     }
   }
 );
